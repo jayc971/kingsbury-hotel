@@ -87,7 +87,7 @@
     <!-- Flickity HTML init -->
     <div class="carousel" data-flickity='{ "autoPlay": true }'>
       <div class="carousel-cell card">
-        <img id="myImg"
+        <img class="carousel-img" id="myImg"
           src="./SuperiorRoom1.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -110,7 +110,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./SuperiorRoom2.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -130,7 +130,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./SuperiorRoom3.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -150,7 +150,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./SuperiorRoom4.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -170,7 +170,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./DeluxeRooms1.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -190,7 +190,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./DeluxeRooms2.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -210,7 +210,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./DeluxeRooms3.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -230,7 +230,7 @@
       </div>
 
       <div class="carousel-cell card">
-        <img
+        <img class="carousel-img"
           src="./DeluxeRooms4.jpg"
           alt="Avatar"
           style="width: 100%; height: 60%; object-fit: cover"
@@ -261,26 +261,42 @@
 
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+
+
+var elems = document.querySelectorAll('.carousel-img');
+    
+for (var i=elems.length; i--;) {
+    elems[i].addEventListener('click', myFunc, false);
+}
+    
+function myFunc() {
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    this.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+}
+    
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+
+
 </script>
 
     <!-- partial -->
