@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" /><link
       rel="stylesheet"
-      href="https://amaya-resorts-request.timemice.com/AMAYALANGDALE/accommodation/flickity.css"
+      href="https://amaya-resorts-request.vercel.app/AMAYALANGDALE/accommodation/flickity.css"
     />
-    <link rel="stylesheet" href="https://amaya-resorts-request.timemice.com/AMAYALANGDALE/accommodation/style.css" />
+    <link rel="stylesheet" href="https://amaya-resorts-request.vercel.app/AMAYALANGDALE/accommodation/style.css" />
 
 
 <style>
@@ -224,17 +224,157 @@ ol.flickity-page-dots {
 
 
 </style>
-
-
-
-
-
-
   </head>
   <body>
     <!-- Flickity HTML init -->
     <div class="carousel" data-flickity='{ "autoPlay": true }'>
-     
+      <div class="carousel-cell card">
+        <img class="carousel-img" id="myImg"
+          src="./DELUXE_ROOMS/1.jpg"
+          style=""
+        />
+        <div class="container">
+          <!--<h4><b>A Day Tour to Kalutota</b></h4>
+          <p
+            >An uncharted and exciting journey with The Fortress Resort and
+            Spa</p
+          >-->
+          <!--<a
+            target="_blank"
+            class="button"
+            href="https://www.fortressresortandspa.com/things-to-do-in-galle/resort-activities/a-day-tour-to-kalutota.html"
+            ><div class="servicechat-admin-options" question="180" option="1"
+              >FIND OUT MORE</div
+            ></a
+          >-->
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class="carousel-cell card">
+        <img class="carousel-img" id="myImg"
+          src="./DELUXE_ROOMS/2.jpg"
+          style=""
+        />
+        <div class="container">
+          <!--<h4><b>A Day Tour to Kalutota</b></h4>
+          <p
+            >An uncharted and exciting journey with The Fortress Resort and
+            Spa</p
+          >-->
+          <!--<a
+            target="_blank"
+            class="button"
+            href="https://www.fortressresortandspa.com/things-to-do-in-galle/resort-activities/a-day-tour-to-kalutota.html"
+            ><div class="servicechat-admin-options" question="180" option="1"
+              >FIND OUT MORE</div
+            ></a
+          >-->
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class="carousel-cell card">
+        <img class="carousel-img" id="myImg"
+          src="./DELUXE_ROOMS/3.jpg"
+          style=""
+        />
+        <div class="container">
+          <!--<h4><b>A Day Tour to Kalutota</b></h4>
+          <p
+            >An uncharted and exciting journey with The Fortress Resort and
+            Spa</p
+          >-->
+          <!--<a
+            target="_blank"
+            class="button"
+            href="https://www.fortressresortandspa.com/things-to-do-in-galle/resort-activities/a-day-tour-to-kalutota.html"
+            ><div class="servicechat-admin-options" question="180" option="1"
+              >FIND OUT MORE</div
+            ></a
+          >-->
+        </div>
+      </div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            <div class="carousel-cell card">
+        <img class="carousel-img" id="myImg"
+          src="./DELUXE_ROOMS/4.jpg"
+          style=""
+        />
+        <div class="container">
+          <!--<h4><b>A Day Tour to Kalutota</b></h4>
+          <p
+            >An uncharted and exciting journey with The Fortress Resort and
+            Spa</p
+          >-->
+          <!--<a
+            target="_blank"
+            class="button"
+            href="https://www.fortressresortandspa.com/things-to-do-in-galle/resort-activities/a-day-tour-to-kalutota.html"
+            ><div class="servicechat-admin-options" question="180" option="1"
+              >FIND OUT MORE</div
+            ></a
+          >-->
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 
     </div>
 
@@ -247,112 +387,46 @@ ol.flickity-page-dots {
 </div>
 
 
-
-
 <script>
 
-  
-    function clickFunc(){
-        var elems = document.querySelectorAll('.carousel-img');
-        
-        for (var i=elems.length; i--;) {
-            elems[i].addEventListener('click', myFunc, false);
-        } 
-            
-    }
-   
-    function myFunc() {
-        // Get the modal
-        var modal = document.getElementById("myModal");
-    
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-    
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-    
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
-    }
-        
-    }
-    
-    
-    
-    
-    </script>
 
 
-<script>
+var elems = document.querySelectorAll('.carousel-img');
+    
+for (var i=elems.length; i--;) {
+    elems[i].addEventListener('click', myFunc, false);
+}
+    
+function myFunc() {
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-    var d = window.location.href;
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
 
-    var arr=d.split('/');
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
 
-    var tt = arr[arr.length-2];
- 
-    var x = document.getElementsByClassName("carousel")[0];
-  
-    elems = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
-  
-  
-  // CHECK IF IMAGE EXISTS
-  function checkIfImageExists(url, callback) {
-  const img = new Image();
-  img.src = url;
-  
-  if (img.complete) {
-  callback(true);
-  } else {
-  img.onload = () => {
-    callback(true);
-  };
-  
-  img.onerror = () => {
-    callback(false);
-  };
-  }
-  }
-  
-  
-  // USAGE
-  elems.forEach(element => {
-  var imgFile = element+".jpg";
-  checkIfImageExists(imgFile, (exists) => {
-  if (exists) {
-  x.innerHTML += "<div class='carousel-cell card'><img class='carousel-img' id='myImg'  src='./" + "DELUXE_ROOMS" + "/" + imgFile + "'/><div class='container'></div></div>";
-  console.log('Image exists. ')
-  } else {
-  console.error('Image does not exists.')
-  }
-  clickFunc();
-  });
- 
-  });
-  
-  
-  
-  
-  
-    /* x.innerHTML += "name : "+obje[i].name+" , age :"+obje[i].age + " "; */
-  
-  
-  
-  
-  </script>
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+}
+    
+}
 
 
 
+
+</script>
 
     <!-- partial -->
-    <script src="https://amaya-resorts-request.timemice.com/AMAYALANGDALE/accommodation/flickity.pkgd.js"></script>
-    <script src="https://s3.amazonaws.com/fortress-resort-n-spa-request.timemice.com/script.js"></script>
+    <script src="https://amaya-resorts-request.vercel.app/AMAYALANGDALE/accommodation/flickity.pkgd.js"></script
+    ><script src="https://s3.amazonaws.com/fortress-resort-n-spa-request.timemice.com/script.js"></script>
   </body>
 </html>
