@@ -325,6 +325,7 @@ ol.flickity-page-dots {
   // USAGE
   elems.forEach(element => {
   var imgFile = "./" + tt + "/" + element+".jpg";
+  console.log(imgFile);
   checkIfImageExists(imgFile, (exists) => {
   if (exists) {
   x.innerHTML += "<div class='carousel-cell card'><img class='carousel-img' id='myImg'  src='" + imgFile + "'/><div class='container'></div></div>";
