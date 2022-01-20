@@ -324,10 +324,10 @@ ol.flickity-page-dots {
   
   // USAGE
   elems.forEach(element => {
-  var imgFile = element+".jpg";
+  var imgFile = "./" + tt + "/" + element+".jpg";
   checkIfImageExists(imgFile, (exists) => {
   if (exists) {
-  x.innerHTML += "<div class='carousel-cell card'><img class='carousel-img' id='myImg'  src='./DELUXE_ROOMS/" + imgFile + "'/><div class='container'></div></div>";
+  x.innerHTML += "<div class='carousel-cell card'><img class='carousel-img' id='myImg'  src='" + imgFile + "'/><div class='container'></div></div>";
   console.log('Image exists. ')
   } else {
   console.error('Image does not exists.')
